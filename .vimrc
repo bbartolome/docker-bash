@@ -35,7 +35,6 @@ set shiftwidth=2
 set backspace=indent,eol,start
 set number
 set path=$PWD/**
-set mouse=a
 set hlsearch
 let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 let g:netrw_altv=1              " open files on right

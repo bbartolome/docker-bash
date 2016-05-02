@@ -3,7 +3,7 @@
 A portable vim development environment for javascript
 
 ```
-docker run -it --rm -v ~/.gitconfig:/root/.gitconfig -v $(pwd):/workspace bbartolome/bash
+docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v ~/.gitconfig:/root/.gitconfig -v $(pwd):/workspace bbartolome/bash
 ```
 
 ## Pre-Installed
@@ -12,4 +12,5 @@ docker run -it --rm -v ~/.gitconfig:/root/.gitconfig -v $(pwd):/workspace bbarto
 - vundle
 - curl
 - git
-- nodejs
+- nodejs (4.4.3)
+- docker

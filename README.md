@@ -12,5 +12,5 @@ docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v ~/.gitconfig
 - vundle
 - curl
 - git
-- nodejs (4.4.3)
+- nodejs (4.4.7)
 - docker

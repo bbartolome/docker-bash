@@ -18,7 +18,8 @@ Plugin 'heavenshell/vim-jsdoc'
 Plugin 'scrooloose/syntastic'                                                                          
 let g:syntastic_javascript_checkers=['eslint']                                                  
 let g:syntastic_check_on_open=1
-let b:syntastic_javascript_eslint_exec = 'npm run lint'
+let s:eslint_path = system('PATH=$(npm bin):$PATH && which eslint')
+let b:syntastic_javascript_eslint_exec = substitute(s:eslint_path, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
